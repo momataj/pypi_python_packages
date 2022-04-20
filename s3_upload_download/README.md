@@ -18,14 +18,13 @@ s3_transfers_utlits.download_s3_file(bucket_name, s3_folder,file_extension, dest
 Example Usage
 .. code-block:: python
 
+        from  s3_upload_download import s3_transfers_file
 
-from  s3_upload_download import s3_transfers_file
-
-bucket_name='test_bucket'
-s3_folder='test_folder'
-file_extension='.parquet'
-destination_path=f'home/momataj/test_folder/'
-s3_transfers_file.download_s3_file(bucket_name, s3_folder, file_extension, destination_path)
+        bucket_name='test_bucket'
+        s3_folder='test_folder'
+        file_extension='.parquet'
+        destination_path=f'home/momataj/test_folder/'
+        s3_transfers_file.download_s3_file(bucket_name, s3_folder, file_extension, destination_path)
 
 
 
@@ -45,13 +44,11 @@ s3_transfers_utlits.upload_s3_file(bucket_name,source_path,base_dir,file_extensi
 
 Example Usage
 .. code-block:: python
+        from  s3_upload_download import s3_transfers_file
 
-
-from  s3_upload_download import s3_transfers_file
-
-bucket_name='test_bucket'
-s3_folder='test_folder'
-file_extension='.parquet'
-base_dir='home/momataj/'
-sourceDir=f'home/momataj/test_folder/'
-s3_transfers_file.upload_s3_file(bucket_name,sourceDir,base_dir,file_extension)
+        bucket_name='test_bucket'
+        s3_folder='test_folder'
+        file_extension='.parquet'
+        base_dir='home/momataj/'
+        sourceDir=f'home/momataj/test_folder/'
+        s3_transfers_file.upload_s3_file(bucket_name,sourceDir,base_dir,file_extension)
