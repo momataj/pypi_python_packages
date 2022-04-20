@@ -1,4 +1,4 @@
-# s3_upload_download with dirictory position 
+# s3_upload_download with subfolders
 
 Utilities for s3 download and upload file.
 
