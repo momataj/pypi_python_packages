@@ -1,6 +1,6 @@
 import datetime
 
-# Composition to prevent explosion of subclasses
+# Composition to prevent explosion of subclasses and allow association between classes 
 class Shift:
     def get_shift_info(self):
         return f"{self.start_time:%H:%M} to {self.end_time:%H:%M}"

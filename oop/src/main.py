@@ -26,13 +26,6 @@ reports=[
 
 
 def main():
-# # decoupling the reports  : Dependency injection 
-#     account_report=AccountReport(employee)
-#     account_report.print_accounting_report()  # call print_accounting_report method
-#     print()
-#     staffing_report=StaffingReport(employee)
-#     staffing_report.print_staffing_report()
-
     for r in reports:
         print()
         r.print_report()  # call print_report()
