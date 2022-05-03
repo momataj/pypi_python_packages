@@ -4,7 +4,7 @@ from datetime import datetime,timedelta
 import boto3
 
 bucket='bucket_test'
-path='contract_products'
+path='products'
 last_modified_date =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')  
 s3client = boto3.client('s3')
 object_dict= s3_objects.latest_files(
