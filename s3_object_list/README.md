@@ -26,7 +26,7 @@ Utilities for latest files from s3 bucket
 Example Usage
 .. code-block:: python
 
-        import s3-last-modified-objects
+        import s3_last_modified_objects
         from datetime import datetime,timedelta
         import boto3
 
@@ -34,7 +34,7 @@ Example Usage
         path='products'
         last_modified_date =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')  
         s3client = boto3.client('s3')
-        object_dict= s3-last-modified-objects.latest_objects(
+        object_dict= s3_last_modified_objects.latest_objects(
                 s3client=s3client,
                 bucket=bucket,
                 prefix=path,
