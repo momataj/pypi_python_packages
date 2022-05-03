@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+s3_last_modified_objects/__init__.py
+s3_last_modified_objects/s3_objects.py
+s3_last_modified_objects.egg-info/PKG-INFO
+s3_last_modified_objects.egg-info/SOURCES.txt
+s3_last_modified_objects.egg-info/dependency_links.txt
+s3_last_modified_objects.egg-info/requires.txt
+s3_last_modified_objects.egg-info/top_level.txt

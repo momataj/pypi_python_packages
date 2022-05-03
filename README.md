@@ -2,9 +2,7 @@
 Developing custom python packages for varies use cases.
 
 ## create pypi packages
-
-v
-
+python setup.py sdist bdist_wheel
  ## upload pypi packages into the respository 
 
 twine upload --repository-url https://upload.pypi.org/legacy/ dist/*

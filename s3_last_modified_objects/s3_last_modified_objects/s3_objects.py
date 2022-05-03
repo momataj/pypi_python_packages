@@ -1,7 +1,7 @@
 from datetime import datetime,timedelta
 import boto3
 
-def latest_objects(s3client, bucket, prefix="", suffix="",last_modified_date=None):
+def latest_files(s3client, bucket, prefix="", suffix="",last_modified_date=None):
 
     """
     Generate details of the objects in an S3 bucket based on last_modified_date.

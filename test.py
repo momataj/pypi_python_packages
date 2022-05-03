@@ -1,13 +1,13 @@
-import s3_last_modified_objects
+from s3_last_modified_objects import s3_objects
 
 from datetime import datetime,timedelta
 import boto3
 
-bucket='contact-dataplatform-test-trusted'
+bucket='bucket_test'
 path='contract_products'
 last_modified_date =(datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')  
 s3client = boto3.client('s3')
-object_dict= s3_last_modified_objects.latest_objects(
+object_dict= s3_objects.latest_files(
                 s3client=s3client,
                 bucket=bucket,
                 prefix=path,
