@@ -3,7 +3,7 @@ Developing custom python packages for varies use cases.
 
 ## create pypi packages
 
- python setup.py bdist_wheel
+v
 
  ## upload pypi packages into the respository 
 
